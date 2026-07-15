@@ -1,0 +1,32 @@
+name: Feature request
+description: Propose a bounded improvement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or engineering problem needs to be solved?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Security and budget boundaries
+      description: Describe provider calls, credentials, GitHub permissions, sandbox needs, and token/cost caps.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Success evidence
+      description: What tests or benchmark would prove this works?
+    validations:
+      required: true
