@@ -22,10 +22,10 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@0b1f0509b2ddb4dc7bd94367abfe7ad1d8a1b810 # v3.30.5
+        uses: github/codeql-action/init@db2c8fe24a75c0f28f87ed1a6fe918a5ccf7b1e6 # v4.31.10
         with:
           languages: javascript-typescript
       - name: Analyze
-        uses: github/codeql-action/analyze@0b1f0509b2ddb4dc7bd94367abfe7ad1d8a1b810 # v3.30.5
+        uses: github/codeql-action/analyze@db2c8fe24a75c0f28f87ed1a6fe918a5ccf7b1e6 # v4.31.10
